@@ -35,6 +35,7 @@ requirements:
     - geopandas
     - dataclasses
     - seaborn
+    - toml
 
 test:
   imports:
