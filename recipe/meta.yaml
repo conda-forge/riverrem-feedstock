@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/OpenTopography/RiverREM/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 125b9646d7dfbe980da9a0680419756385c4da2e89ae0b0a98819a9d548f6a1a
+  sha256: a5b260f2e38567269b186be66f50f55f7b2430e9762cd4bee38fdf3586cfdb71
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -27,7 +27,6 @@ requirements:
     - osmnx
     - dataclasses
     - seaborn
-    - scipy >=1.6.0
     - shapely
     - pandas
     - bottleneck
