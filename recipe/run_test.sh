@@ -1,2 +1,2 @@
-python test_local.py
-python test_url.py
+python ./tests/test_local.py
+python ./tests/test_url.py
