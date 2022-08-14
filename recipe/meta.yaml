@@ -1,5 +1,5 @@
 {% set name = "riverrem" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/OpenTopography/RiverREM/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 036b7a4c0a68e4b983025707913b5d76680487559c950dbec3f031c302bb4531
+  sha256: c003c6495a74c12a538aa5709c6bede4441c1af11c2cdecfe4cf6f2c100bdd98
 
 build:
   noarch: python
@@ -23,24 +23,26 @@ requirements:
   run:
     - python >=3.6
     - gdal >=3.1.4
-    - scipy
     - osmnx
     - dataclasses
     - seaborn
     - scipy >=1.6.0
     - shapely
     - pandas
+    - requests
+    - geopandas
     - bottleneck
     - numexpr
-    - geopandas
-    - dataclasses
-    - seaborn
 
 test:
   imports:
     - riverrem
     - riverrem.RasterViz
     - riverrem.REMMaker
+  source-files:
+    - tests/smith_SRTM.tif
+    - tests/test_local.py
+    - tests/test_url.py
 
 about:
   home: https://github.com/OpenTopography/RiverREM
