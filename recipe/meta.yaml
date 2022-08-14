@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/OpenTopography/RiverREM/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c003c6495a74c12a538aa5709c6bede4441c1af11c2cdecfe4cf6f2c100bdd98
+  sha256: 7d42022209398dcec499e6ab21099dae84fb2d84fc06eafedfd3c63cfb40885e
 
 build:
   noarch: python
