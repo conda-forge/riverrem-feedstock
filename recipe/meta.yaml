@@ -39,7 +39,7 @@ test:
     - riverrem
     - riverrem.RasterViz
     - riverrem.REMMaker
-  source-files:
+  source_files:
     - tests/smith_SRTM.tif
     - tests/test_local.py
     - tests/test_url.py
