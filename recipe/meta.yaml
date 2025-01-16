@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - gdal >=3.1.4
     - osmnx
     - dataclasses
@@ -35,6 +35,8 @@ requirements:
     - numexpr
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - riverrem
     - riverrem.RasterViz
