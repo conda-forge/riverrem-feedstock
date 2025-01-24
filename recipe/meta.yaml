@@ -15,9 +15,6 @@ build:
   number: 1
 
 requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ stdlib("c") }}
   host:
     - python {{ python_min }}
     - pip
