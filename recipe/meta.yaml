@@ -1,5 +1,5 @@
 {% set name = "riverrem" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/OpenTopography/RiverREM/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7d42022209398dcec499e6ab21099dae84fb2d84fc06eafedfd3c63cfb40885e
+  sha256: 3e46759c2a79b7348cc2d7bb7c05e16ee7cf2c7f527a534ded82e5066b14bad9
 
 build:
   noarch: python
@@ -53,7 +53,7 @@ about:
     from nothing but an input digital elevation model (DEM). The package uses the OpenStreetMap API to retrieve 
     river centerline geometries over the DEM extent. Interpolation of river elevations is automatically handled 
     using a sampling scheme based on raster resolution and river sinuosity to create striking high-resolution 
-    visualizations without interpolation artefacts straight out of the box and without additional manual steps. 
+    visualizations out of the box and without additional manual steps. 
     The package also contains a helper class for creating DEM raster visualizations.
   license: GPL-3.0-only
   license_family: GPL
