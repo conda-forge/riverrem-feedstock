@@ -17,7 +17,7 @@ RiverREM is a Python package for automatically generating river relative elevati
 from nothing but an input digital elevation model (DEM). The package uses the OpenStreetMap API to retrieve
 river centerline geometries over the DEM extent. Interpolation of river elevations is automatically handled
 using a sampling scheme based on raster resolution and river sinuosity to create striking high-resolution
-visualizations without interpolation artefacts straight out of the box and without additional manual steps.
+visualizations out of the box and without additional manual steps.
 The package also contains a helper class for creating DEM raster visualizations.
 
 
