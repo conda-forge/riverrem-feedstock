@@ -1,5 +1,5 @@
 {% set name = "riverrem" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/OpenTopography/RiverREM/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 3e46759c2a79b7348cc2d7bb7c05e16ee7cf2c7f527a534ded82e5066b14bad9
+  sha256: 664f4896b2a4648922956d467bac066f135f5ece4b00039b1161984e72b7341d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - gdal >=3.1.4,<3.9
+    - gdal >=3.7,<3.9
     - osmnx >=1.3,<2.0
     - dataclasses
     - seaborn
