@@ -1,5 +1,5 @@
 {% set name = "riverrem" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/OpenTopography/RiverREM/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 664f4896b2a4648922956d467bac066f135f5ece4b00039b1161984e72b7341d
+  sha256: bd0a099a9d688f5f38258b735fe2bfd0f565c21d8d0ed9223dc64e32b52dc893
 
 build:
   noarch: python
